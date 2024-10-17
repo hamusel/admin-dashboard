@@ -4,40 +4,81 @@
     <meta charset="UTF-8">
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <div id="container">
     <div id="upper">
-        <input type="text">
+        <div id="input-container">
+            <div class="small-box"></div>
+            <input type="text">
+        </div>
         <div id="buttons">
             <button class="blue-button">New</button>
             <button class="blue-button">Upload</button>
             <button class="blue-button">Share</button>
         </div>
         <div id="account-information">
+            <div class="small-box"></div>
+            <div class="medium-box"></div>
             <h3>
                 Morgan Oakley
             </h3>
         </div>
         <div id="welcome">
-            <h3>Hi there,</h3>
-            <h1>Morgen Oakley (@Morgan)</h1>
+            <div id="hello-container">
+                <div class="big-box"></div>
+                <div>
+                    <h3>Hi there,</h3>
+                    <h1>Morgan Oakley (@Morgan)</h1>
+                </div>
+            </div>
         </div>
     </div>
     <div id="sidebar">
-        <h1>Dashboard</h1>
-        <ul>
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Community</li>
+        <div id="dashboard-container">
+            <div class="medium-box"></div>
+            <h1>Dashboard</h1>
+        </div>
+        <ul class="sidebar-list">
+            <li>
+                <div class="small-box"></div>
+                Home
+            </li>
+            <li>
+                <div class="small-box"></div>
+                Profile
+            </li>
+            <li>
+                <div class="small-box"></div>
+                Messages
+            </li>
+            <li>
+                <div class="small-box"></div>
+                History
+            </li>
+            <li>
+                <div class="small-box"></div>
+                Tasks
+            </li>
+            <li>
+                <div class="small-box"></div>
+                Community
+            </li>
         </ul>
-        <ul>
-            <li>Settings</li>
-            <li>Support</li>
-            <li>Privacy</li>
+        <ul class="sidebar-list">
+            <li>
+                <div class="small-box"></div>
+                Settings
+            </li>
+            <li>
+                <div class="small-box"></div>
+                Support
+            </li>
+            <li>
+                <div class="small-box"></div>
+                Privacy
+            </li>
         </ul>
     </div>
     <div id="projects-container">
@@ -90,7 +131,7 @@
     <div id="right-side">
         <div class="right" id="announcements">
             <h2>Announcements</h2>
-            <ul>
+            <ul id="announcements-container">
                 <li>Site Maintenance</li>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad animi aut commodi consectetur debitis
                     distinctio...</p>
@@ -106,13 +147,16 @@
         </div>
         <div class="right" id="trending">
             <h2>Trending</h2>
-
-            <ul>
-                <li>@Tegan</li>
-                <li>@morgan</li>
-                <li>@kendall</li>
-                <li>@alex</li>
-            </ul>
+            <div id="trending-container">
+                <div class="small-box"></div>
+                <span>@tegan <br><b>World Peace Builder</b></span>
+                <div class="small-box"></div>
+                <span>@morgan <br><b>Super cool project</b></span>
+                <div class="small-box"></div>
+                <span>@kendall <br><b>Life changing app</b></span>
+                <div class="small-box"></div>
+                <span>@alex <br><b>no traffic maker</b></span>
+            </div>
         </div>
     </div>
 </div>

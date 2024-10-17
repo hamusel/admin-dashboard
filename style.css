@@ -1,3 +1,7 @@
+* {
+    font-family: Roboto, serif;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -16,6 +20,9 @@ body {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 6fr;
+    gap: 20px;
     color: white;
     font-size: 24px;
     padding: 5px
@@ -24,7 +31,7 @@ body {
 ul {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    /*gap: 15px;*/
 }
 
 li {
@@ -72,11 +79,14 @@ input {
     width: 70%;
     justify-self: start;
     align-self: center;
+    border-radius: 10px;
+    background-color: #e3e3e3;
 }
 
 #projects-container {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    padding-left: 30px;
 }
 
 #projects {
@@ -92,16 +102,94 @@ input {
     border-left: 10px solid #cc8900;
 }
 
-#right-side{
+#right-side {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    margin-left: 20px;
 }
 
 #announcements {
     grid-row: 1 / 2;
 }
 
+#announcements-container {
+    background-color: white;
+    width: 80%;
+}
+
 #trending {
     grid-row: 2 / 3;
+}
+
+#trending-container {
+    background-color: white;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+#announcements-container, #trending-container {
+    border-radius: 10px;
+}
+
+#input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 60px;
+}
+
+#account-information {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-box {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+.medium-box {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.big-box {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+}
+
+.sidebar-list {
+    display: grid;
+    align-self: start;
+    justify-self: start;
+    gap: 20px;
+}
+
+.sidebar-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#dashboard-container {
+    display: flex;
+    gap: 10px;
+    padding-left: 23px;
+    align-items: center;
+}
+
+#hello-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 60px;
 }

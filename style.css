@@ -1,5 +1,6 @@
 * {
     font-family: Roboto, serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -105,6 +106,11 @@ input {
     border-radius: 10px;
     border-left: 10px solid #cc8900;
     padding-left: 20px;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px);
 }
 
 #right-side {
